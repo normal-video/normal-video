@@ -1,4 +1,4 @@
-import { AjaxPlugin } from './ajax-plugin'
+import AjaxPlugin from './ajax-plugin'
 
 export {
   AjaxPlugin
