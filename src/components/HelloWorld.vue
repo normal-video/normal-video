@@ -10,7 +10,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: '发挥预热',
+      msg: '发挥预热111',
       video: {}
     }
   },
