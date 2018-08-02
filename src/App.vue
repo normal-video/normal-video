@@ -1,12 +1,11 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-     <header>
+     <footer>
       <router-link to="/Index">Index</router-link>
       <router-link to="/MusicPage">Music</router-link>
       <router-link to="/VideoPage">Video</router-link>
       <router-link to="/PersonalPage">Personal</router-link>
-    </header>
+    </footer>
     <router-view></router-view>
      </div>
 </template>
