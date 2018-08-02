@@ -1,18 +1,21 @@
 <template>
   <div id="app">
-     <footer>
-      <router-link to="/Index">Index</router-link>
-      <router-link to="/MusicPage">Music</router-link>
-      <router-link to="/VideoPage">Video</router-link>
-      <router-link to="/PersonalPage">Personal</router-link>
-    </footer>
+    <tabbar :selected="selected" :tabs='tabs'></tabbar>
     <router-view></router-view>
      </div>
 </template>
 
 <script>
+import tabbar from '../src/components/tabbar/tabbar'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {tabbar},
+  data () {
+    return {
+      selected: 'IndexLeader',
+      tabs: [require('../src/assets/home.svg'), require('../src/assets/music.svg'), require('../src/assets/video.svg'), require('../src/assets/user.svg')]
+    }
+  }
 }
 </script>
 
