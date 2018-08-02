@@ -3,6 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import Mint from 'mint-ui'
+import 'mint-ui/lib/style.css'
 import { AjaxPlugin } from './plugins'
 
 import './data'
@@ -10,6 +12,7 @@ import './data'
 Vue.config.productionTip = false
 
 Vue.use(AjaxPlugin)
+Vue.use(Mint)
 
 /* eslint-disable no-new */
 new Vue({
