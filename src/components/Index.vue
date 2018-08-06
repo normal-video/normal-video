@@ -1,13 +1,12 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>hello</h2>
-  </div>
+<my-header></my-header>
 </template>
 
 <script>
+import MyHeader from '../../src/components/common/header'
 export default {
   name: 'Index',
+  components: {MyHeader},
   data () {
     return {
       msg: '老首页',
