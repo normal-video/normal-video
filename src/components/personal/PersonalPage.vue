@@ -2,7 +2,11 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>PersonalPage</h2>
-    <mt-cell title="标题文字"></mt-cell>
+    <mt-cell title="标题文字" value="说明文字"></mt-cell>
+    <mt-cell title="标题文字" value="说明文字"></mt-cell>
+    <mt-cell title="标题文字" value="说明文字"></mt-cell>
+    <mt-cell title="标题文字" value="说明文字"></mt-cell>
+    <mt-cell title="标题文字" value="说明文字"></mt-cell>
     <mt-cell title="标题文字" value="说明文字"></mt-cell>
     <mt-cell title="标题文字" icon="more" value="带 icon"></mt-cell>
   </div>

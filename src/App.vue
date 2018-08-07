@@ -23,4 +23,5 @@ export default {
 
 <style lang='stylus'>
   @import "style/common"
+  @import "style/mixin"
 </style>
