@@ -1,11 +1,11 @@
 <template>
-<my-header>
+<header>
 <div class="search_bar">
 <div class="user_icon_box"><div class="user_icon"><img class="user_icon_img" src="../../assets/logo.png" alt=""></div></div>
 <div class="title">ZIZIZI</div>
 <div class="search_icon"><img class="search_icon_img" src="../../assets/search.svg" alt=""></div>
 </div>
-</my-header>
+</header>
 </template>
 <script>
 export default {
@@ -25,7 +25,7 @@ export default {
 </script>
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style >
-my-header{
+header{
   position: fixed;
   top: 0;
   left: 0;
