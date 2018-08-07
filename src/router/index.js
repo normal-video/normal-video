@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import Index from '@/components/Index'
 import MusicPage from '@/components/MusicPage'
 import VideoPage from '@/components/VideoPage'
-import PersonalPage from '@/components/PersonalPage'
+import PersonalPage from '@/components/personal/PersonalPage'
 
 Vue.use(Router)
 
