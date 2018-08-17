@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "正经视频",
+    "title": "@title",
     "url": "/static/media/02.eff1237.mp4",
     "post": "../assets/logo.png",
     "detail": "testtest"

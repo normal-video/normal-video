@@ -26,13 +26,14 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style >
 header{
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 3rem;
   background-color: aqua;
   color: black;
+  z-index: 10;
 }
 .title{
   text-align: center;
@@ -49,7 +50,6 @@ header{
   position: absolute;
   top: 1.75rem;
   left: 1.75rem;
-  z-index: 1;
 }
 .user_icon_img{
   background: #fff;
