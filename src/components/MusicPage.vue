@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div>
     <h1>{{ msg }}</h1>
     <h2>MusicPage</h2>
   </div>
@@ -15,10 +15,6 @@ export default {
     }
   },
   created () {
-    this.$http.get('./test').then(res => {
-      this.video = res.data[0]
-      console.log(this.video, 'mockjs又用了？')
-    })
   }
 }
 </script>

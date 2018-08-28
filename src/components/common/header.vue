@@ -26,7 +26,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style >
 header{
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
