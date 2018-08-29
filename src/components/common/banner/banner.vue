@@ -3,7 +3,6 @@
 <swiper-slide v-for="(banner,index) in banners" :key="index">
 <img  class="banner-img" :src="banner.src" @click="handleClick(banner.id)">
 </swiper-slide>
-<div class="swiper-pagination" slot-scope="pagination">{{banners.id}}</div>
 </swiper>
 </template>
 <script>
@@ -42,7 +41,6 @@ export default {
 
 <style>
 .swiper-wrapper{
-      margin-top: 3rem;
       height: 15rem;
       width: 100%;
 }
