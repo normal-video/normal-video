@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <tabbar :selected="selected" :tabs='tabs'></tabbar>
-    <transition name="router-fade">
+    <transition name="router-fade" mode="out-in">
       <keep-alive>
         <router-view></router-view>
       </keep-alive>
@@ -28,9 +28,7 @@ export default {
   @import "style/common"
   @import "style/mixin"
     .router-fade-enter-active, .router-fade-leave-active
-      transition all .3s
+      transition: opacity .3s;
     .router-fade-enter, .router-fade-leave-active
-      width 100%
-      position absolute
-      opacity 0
+      opacity: 0;
 </style>
