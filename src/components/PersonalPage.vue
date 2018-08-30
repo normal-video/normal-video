@@ -3,27 +3,29 @@
     <mt-header class="normal-header" fixed title="我">
       <i class="iconfont" slot="right">&#xe7d4;</i>
     </mt-header>
-    <mt-cell class="cells" title="信息动态">
-      <i class="iconfont cell-icon" slot="icon">&#xe78a;</i>
-    </mt-cell>
-    <mt-cell class="cells" title="离线任务">
-      <i class="iconfont cell-icon" slot="icon">&#xe7d9;</i>
-    </mt-cell>
-    <mt-cell class="cells" title="历史纪录">
-      <i class="iconfont cell-icon" slot="icon">&#xe789;</i>
-    </mt-cell>
-    <mt-cell class="cells" title="收藏夹">
-      <i class="iconfont cell-icon" slot="icon">&#xe7df;</i>
-    </mt-cell>
-    <mt-cell class="cells" title="关注的人">
-      <i class="iconfont cell-icon" slot="icon">&#xe7ae;</i>
-    </mt-cell>
-    <mt-cell class="cells" title="消费记录">
-      <i class="iconfont cell-icon" slot="icon">&#xe7b0;</i>
-    </mt-cell>
-    <mt-cell class="cells" title="设置">
-      <i class="iconfont cell-icon" slot="icon">&#xe78e;</i>
-    </mt-cell>
+    <div class="main">
+      <mt-cell class="cells" title="信息动态">
+        <i class="iconfont cell-icon" slot="icon">&#xe78a;</i>
+      </mt-cell>
+      <mt-cell class="cells" title="离线任务">
+        <i class="iconfont cell-icon" slot="icon">&#xe7d9;</i>
+      </mt-cell>
+      <mt-cell class="cells" title="历史纪录">
+        <i class="iconfont cell-icon" slot="icon">&#xe789;</i>
+      </mt-cell>
+      <mt-cell class="cells" title="收藏夹">
+        <i class="iconfont cell-icon" slot="icon">&#xe7df;</i>
+      </mt-cell>
+      <mt-cell class="cells" title="关注的人">
+        <i class="iconfont cell-icon" slot="icon">&#xe7ae;</i>
+      </mt-cell>
+      <mt-cell class="cells" title="消费记录">
+        <i class="iconfont cell-icon" slot="icon">&#xe7b0;</i>
+      </mt-cell>
+      <mt-cell class="cells" title="设置">
+        <i class="iconfont cell-icon" slot="icon">&#xe78e;</i>
+      </mt-cell>
+    </div>
   </div>
 </template>
 
