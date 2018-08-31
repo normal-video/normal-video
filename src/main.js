@@ -8,6 +8,7 @@ import 'mint-ui/lib/style.css'
 import { AjaxPlugin } from './plugins'
 import VueAwesomeSwiper from 'vue-awesome-swiper'
 import './data'
+import store from './store'
 
 Vue.config.productionTip = false
 Vue.use(VueAwesomeSwiper)
@@ -18,6 +19,7 @@ Vue.use(Mint)
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

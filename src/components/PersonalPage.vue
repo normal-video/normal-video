@@ -30,6 +30,8 @@
 </template>
 
 <script>
+import { mapActions, mapState } from 'vuex'
+
 export default {
   name: 'PersonalPage',
   data () {
@@ -39,10 +41,27 @@ export default {
     }
   },
   created () {
-    this.$http.get('./test').then(res => {
-      this.video = res.data[0]
-      console.log(this.video, 'mockjs又用了？')
-    })
+    console.log(mapActions, mapState, 'mapstate')
+    console.log(this.user)
+    // this.getUserInfo()
+  },
+  // methods: {
+  //   ...mapActions([
+  //     'getUserInfo'
+  //   ])
+  // },
+  computed: {
+    ...mapState([
+      'user'
+    ])
+  },
+  watch: {
+    // user: {
+    //   handler (newone) {
+    //     console.log(newone)
+    //   },
+    //   deep: true
+    // }
   }
 }
 </script>
