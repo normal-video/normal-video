@@ -68,12 +68,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="stylus">
+  @import "../style/mixin"
   .personal-page
     .normal-header
       color #fff
-      background pink
+      background $p
     .cell-icon
-      color pink
+      color $p
       font-size 2rem
       margin-right 1rem
     .cells
