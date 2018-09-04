@@ -4,6 +4,14 @@
       <i class="iconfont" slot="right">&#xe7d4;</i>
     </mt-header>
     <div class="main">
+      <div class="personal-info">
+        <div class="head-icon"></div>
+        <div class="infos">
+          <div class="user-name">name</div>
+          <div class="coins">233</div>
+        </div>
+        <div class="logout">注销</div>
+      </div>
       <mt-cell class="cells" title="信息动态">
         <i class="iconfont cell-icon" slot="icon">&#xe78a;</i>
       </mt-cell>
@@ -84,4 +92,11 @@ export default {
       .mint-cell-title
         display flex
         align-items center
+    .personal-info
+      margin .5rem 0
+      padding .5rem 0
+      background #fff
+      display flex
+      align-items center
+      justify-content space-between
 </style>
