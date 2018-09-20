@@ -15,8 +15,8 @@ const mutations = {
 }
 
 const actions = {
-  getUserInfo ({comit}) {
-    Vue.http.get('./userInfo').then(res => console.log(res, 'ssssss'))
+  getUserInfo ({commit}) {
+    Vue.http.get('./user').then(res => commit('updateUser', res.data))
   }
 }
 

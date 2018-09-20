@@ -5,10 +5,12 @@
     </mt-header>
     <div class="main">
       <div class="personal-info">
-        <div class="head-icon"></div>
+        <div class="head-icon">
+          <img :src="user.absolutePath">
+        </div>
         <div class="infos">
-          <div class="user-name">name</div>
-          <div class="coins">233</div>
+          <div class="user-name">{{ user.useName }}</div>
+          <div class="coins">{{ user.reach }}</div>
         </div>
         <div class="logout">注销</div>
       </div>
@@ -49,27 +51,25 @@ export default {
     }
   },
   created () {
-    console.log(mapActions, mapState, 'mapstate')
-    console.log(this.user)
-    // this.getUserInfo()
+    this.getUserInfo()
   },
-  // methods: {
-  //   ...mapActions([
-  //     'getUserInfo'
-  //   ])
-  // },
+  mounted () {
+    this.getUserInfo()
+  },
+  methods: {
+    ...mapActions([
+      'getUserInfo'
+    ])
+  },
   computed: {
     ...mapState([
       'user'
     ])
   },
   watch: {
-    // user: {
-    //   handler (newone) {
-    //     console.log(newone)
-    //   },
-    //   deep: true
-    // }
+    user () {
+      console.log(this.user)
+    }
   }
 }
 </script>
@@ -98,5 +98,11 @@ export default {
       background #fff
       display flex
       align-items center
-      justify-content space-between
+      .head-icon
+        height 4rem
+        width 20%
+      .infos
+        width 60%
+      .logout
+        width 20%
 </style>

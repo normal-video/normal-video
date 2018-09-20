@@ -20,6 +20,10 @@ export default {
       selected: 'IndexLeader',
       tabs: [require('../src/assets/home.svg'), require('../src/assets/music.svg'), require('../src/assets/video.svg'), require('../src/assets/user.svg')]
     }
+  },
+  watch: {
+    $route () {
+    }
   }
 }
 </script>

@@ -13,8 +13,6 @@ export default {
       msg: '音乐区',
       video: {}
     }
-  },
-  created () {
   }
 }
 </script>

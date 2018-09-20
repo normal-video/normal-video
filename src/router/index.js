@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Index from '@/components/Index'
-import MusicPage from '@/components/MusicPage'
-import VideoPage from '@/components/VideoPage'
-import PersonalPage from '@/components/PersonalPage'
+
+const Index = () => import('@/components/Index')
+const MusicPage = () => import('@/components/MusicPage')
+const VideoPage = () => import('@/components/VideoPage')
+const PersonalPage = () => import('@/components/PersonalPage')
 
 Vue.use(Router)
 
